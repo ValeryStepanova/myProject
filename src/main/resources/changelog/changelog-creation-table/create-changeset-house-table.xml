@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="create_table_Houses" author="lera">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="Houses"/>
+            </not>
+        </preConditions>
+        <createTable tableName="Houses">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+            <column name="size" type="double"/>
+            <column name="color" type="varchar(200)"/>
+            <column name="room_count" type="int"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
