@@ -1,5 +1,6 @@
-package application.dao;
+package application.dao.daoClasses;
 
+import application.dao.daoInterfaces.DAO;
 import application.utils.printer.Printer;
 
 import javax.persistence.Column;

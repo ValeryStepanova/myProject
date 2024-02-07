@@ -1,10 +1,10 @@
-package application.dao;
+package application.dao.daoClasses;
 
+import application.dao.daoClasses.DAOImplDoor;
+import application.dao.daoClasses.DAOImplHouse;
 import application.dao.utils.MockUtils;
-import application.door.Door;
-import application.door.doorDAO.DAOImplDoor;
-import application.house.House;
-import application.house.houseDAO.DAOImplHouse;
+import application.entity.Door;
+import application.entity.House;
 import application.utils.hibernation.HibernateUtil;
 import org.junit.Assert;
 import org.junit.jupiter.api.MethodOrderer;

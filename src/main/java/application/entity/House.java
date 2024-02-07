@@ -1,4 +1,4 @@
-package application.house;
+package application.entity;
 
 import lombok.*;
 

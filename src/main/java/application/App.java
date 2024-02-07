@@ -1,7 +1,7 @@
 package application;
 
-import application.door.doorDAO.DAOImplDoor;
-import application.house.houseDAO.DAOImplHouse;
+import application.dao.daoClasses.DAOImplDoor;
+import application.dao.daoClasses.DAOImplHouse;
 import application.utils.hibernation.HibernateUtil;
 import application.utils.menu.UserMenu;
 

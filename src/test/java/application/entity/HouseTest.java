@@ -1,6 +1,6 @@
-package application.house;
+package application.entity;
 
-import application.house.House;
+import application.entity.House;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

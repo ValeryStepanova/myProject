@@ -6,8 +6,8 @@
 
     <persistence-unit name="lera">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>application.door.Door</class>
-        <class>application.house.House</class>
+        <class>application.entity.Door</class>
+        <class>application.entity.House</class>
          <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url"

@@ -1,6 +1,6 @@
-package application.door;
+package application.entity;
 
-import application.door.Door;
+import application.entity.Door;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

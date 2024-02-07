@@ -10,5 +10,7 @@ public class ConstantContainer {
     public static final String UPDATE_ENTITY = "3.Update entity\n";
     public static final String READ_ENTITY = "4.Read entity";
 
-    private ConstantContainer() {}
+    private ConstantContainer() {
+
+    }
 }

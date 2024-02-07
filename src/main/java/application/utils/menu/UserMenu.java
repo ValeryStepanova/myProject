@@ -1,15 +1,14 @@
 package application.utils.menu;
 
-import application.door.Door;
-import application.door.doorDAO.DAOImplDoor;
-import application.house.House;
-import application.house.houseDAO.DAOImplHouse;
+import application.entity.Door;
+import application.dao.daoClasses.DAOImplDoor;
+import application.entity.House;
+import application.dao.daoClasses.DAOImplHouse;
 import application.utils.printer.Printer;
 
 import java.util.InputMismatchException;
 import java.util.Optional;
 import java.util.Scanner;
-
 
 public class UserMenu {
 
@@ -96,7 +95,6 @@ public class UserMenu {
                                     .type(type)
                                     .build());
                             break;
-
                         case 2:
                             Printer.printEnterDoorIdForDelete();
                             id = addIntegerValue(scanner);
@@ -122,6 +120,9 @@ public class UserMenu {
                             Optional<Door> opt = Optional.ofNullable(doors.read(id));
                             opt.ifPresent(System.out::println);
                             break;
+                        default:
+                            Printer.printSwitchDefaultMenu();
+                            break;
                     }
                     break;
                 case 0:
@@ -142,20 +143,20 @@ public class UserMenu {
         return num;
     }
 
-
     public static double addDoubleValue(Scanner scanner) {
         double number = -1.0;
-        while (number < 0)
+        while (number < 0) {
             try {
                 number = scanner.nextDouble();
             } catch (InputMismatchException e) {
                 Printer.printEnterDoubleValueMessage();
                 scanner.next();
             }
+        }
         return number;
     }
 
-    public static int addIntegerValue(Scanner scanner){
+    public static int addIntegerValue(Scanner scanner) {
         int number = -1;
         while (number < 0)
         try {

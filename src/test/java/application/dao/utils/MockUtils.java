@@ -1,7 +1,7 @@
 package application.dao.utils;
 
-import application.door.Door;
-import application.house.House;
+import application.entity.Door;
+import application.entity.House;
 import org.junit.Assert;
 
 import java.io.ByteArrayOutputStream;
